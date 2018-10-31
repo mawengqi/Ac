@@ -1,0 +1,131 @@
+749  [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:7900], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+801  [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+811  [cluster-ClusterId{value='5bd0215fc792cc0b1422384e', description='null'}-localhost:7900] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:444}] to localhost:7900
+814  [cluster-ClusterId{value='5bd0215fc792cc0b1422384e', description='null'}-localhost:7900] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:7900, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 1, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2148012}
+824  [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:445}] to localhost:7900
+863  [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1823ms
+922  [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+942  [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.h.ContextHandler@312ab28e{/res,null,AVAILABLE}
+958  [main] WARN  o.e.j.webapp.WebInfConfiguration - Web application not found ./war
+961  [main] WARN  o.e.jetty.webapp.WebAppContext - Failed startup of context o.e.j.w.WebAppContext@5644dc81{/,null,null}{./war}
+java.io.FileNotFoundException: ./war
+	at org.eclipse.jetty.webapp.WebInfConfiguration.unpack(WebInfConfiguration.java:497) ~[jetty-webapp-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.webapp.WebInfConfiguration.preConfigure(WebInfConfiguration.java:72) ~[jetty-webapp-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.webapp.WebAppContext.preConfigure(WebAppContext.java:483) ~[jetty-webapp-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:519) ~[jetty-webapp-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61) ~[jetty-server-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:161) ~[jetty-server-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.server.Server.start(Server.java:411) ~[jetty-server-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:106) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61) ~[jetty-server-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:378) ~[jetty-server-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at chat.main.ServerStart.start(Unknown Source) ~[scriptcore.jar:na]
+	at chat.main.Main.main(Unknown Source) ~[sdockercore.jar:na]
+	at SDockerMain.main(SDockerMain.java:32) ~[classes/:na]
+979  [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@60dce7ea{HTTP/1.1,[http/1.1]}{0.0.0.0:10055}
+979  [main] INFO  org.eclipse.jetty.server.Server - Started @1941ms
+982  [main] INFO   - [2018-10-24 15:38:07 0604|ServerStart] handler--org.eclipse.jetty.server.handler.ContextHandlerCollection@662f5666[o.e.j.s.h.ContextHandler@312ab28e{/res,null,AVAILABLE}, o.e.j.w.WebAppContext@5644dc81{/,null,UNAVAILABLE}{./war}]
+983  [main] INFO   - [2018-10-24 15:38:07 0605|ServerStart] connector--[ServerConnector@60dce7ea{HTTP/1.1,[http/1.1]}{0.0.0.0:10055}]
+986  [main] INFO   - [2018-10-24 15:38:07 0608|ServerStart] threadPool--qtp990679445{STARTED,8<=8<=1024,i=5,q=0}, minithread-number:8
+986  [main] INFO   - [2018-10-24 15:38:07 0608|ServerStart] Server started , current Time: Wed Oct 24 15:38:07 CST 2018
+730  [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:7900], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+788  [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+797  [cluster-ClusterId{value='5bd021c0c792cc6b407357b8', description='null'}-localhost:7900] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:446}] to localhost:7900
+800  [cluster-ClusterId{value='5bd021c0c792cc6b407357b8', description='null'}-localhost:7900] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:7900, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 1, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2141526}
+809  [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:447}] to localhost:7900
+847  [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1620ms
+903  [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+923  [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.h.ContextHandler@2a7686a7{/res,null,AVAILABLE}
+938  [main] WARN  o.e.j.webapp.WebInfConfiguration - Web application not found ./war
+942  [main] WARN  o.e.jetty.webapp.WebAppContext - Failed startup of context o.e.j.w.WebAppContext@758a34ce{/,null,null}{./war}
+java.io.FileNotFoundException: ./war
+	at org.eclipse.jetty.webapp.WebInfConfiguration.unpack(WebInfConfiguration.java:497) ~[jetty-webapp-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.webapp.WebInfConfiguration.preConfigure(WebInfConfiguration.java:72) ~[jetty-webapp-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.webapp.WebAppContext.preConfigure(WebAppContext.java:483) ~[jetty-webapp-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:519) ~[jetty-webapp-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61) ~[jetty-server-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:161) ~[jetty-server-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.server.Server.start(Server.java:411) ~[jetty-server-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:106) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61) ~[jetty-server-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:378) ~[jetty-server-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at chat.main.ServerStart.start(Unknown Source) ~[scriptcore.jar:na]
+	at chat.main.Main.main(Unknown Source) ~[sdockercore.jar:na]
+	at SDockerMain.main(SDockerMain.java:32) ~[classes/:na]
+954  [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@75c9e76b{HTTP/1.1,[http/1.1]}{0.0.0.0:10055}
+954  [main] INFO  org.eclipse.jetty.server.Server - Started @1729ms
+957  [main] INFO   - [2018-10-24 15:39:44 0726|ServerStart] handler--org.eclipse.jetty.server.handler.ContextHandlerCollection@7446d8d5[o.e.j.s.h.ContextHandler@2a7686a7{/res,null,AVAILABLE}, o.e.j.w.WebAppContext@758a34ce{/,null,UNAVAILABLE}{./war}]
+957  [main] INFO   - [2018-10-24 15:39:44 0727|ServerStart] connector--[ServerConnector@75c9e76b{HTTP/1.1,[http/1.1]}{0.0.0.0:10055}]
+957  [main] INFO   - [2018-10-24 15:39:44 0727|ServerStart] threadPool--qtp2036775591{STARTED,8<=8<=1024,i=5,q=0}, minithread-number:8
+957  [main] INFO   - [2018-10-24 15:39:44 0727|ServerStart] Server started , current Time: Wed Oct 24 15:39:44 CST 2018
+1180 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+1237 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+1257 [cluster-ClusterId{value='5bd021cec792cc566453d8a2', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:110}] to localhost:27017
+1260 [cluster-ClusterId{value='5bd021cec792cc566453d8a2', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 1]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2001239}
+1268 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:111}] to localhost:27017
+1179 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+1237 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+1247 [cluster-ClusterId{value='5bd021d4c792cc658c63edef', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:112}] to localhost:27017
+1250 [cluster-ClusterId{value='5bd021d4c792cc658c63edef', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 1]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2200577}
+1259 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:113}] to localhost:27017
+1216 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+1278 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+1309 [cluster-ClusterId{value='5bd021e0c792cc57e8f03b5f', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:114}] to localhost:27017
+1313 [cluster-ClusterId{value='5bd021e0c792cc57e8f03b5f', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 1]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2169175}
+1321 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:115}] to localhost:27017
+1189 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+1250 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+1264 [cluster-ClusterId{value='5bd02348c792cc6ad0a6093d', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:166}] to localhost:27017
+1269 [cluster-ClusterId{value='5bd02348c792cc6ad0a6093d', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 1]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2681175}
+1277 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:167}] to localhost:27017
+1212 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+1267 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+1279 [cluster-ClusterId{value='5bd02351c792cc6ac40ad2d0', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:168}] to localhost:27017
+1282 [cluster-ClusterId{value='5bd02351c792cc6ac40ad2d0', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 1]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2077356}
+1290 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:169}] to localhost:27017
+1214 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+1289 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+1299 [cluster-ClusterId{value='5bd02358c792cc43a4f8286f', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:170}] to localhost:27017
+1302 [cluster-ClusterId{value='5bd02358c792cc43a4f8286f', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 1]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1889622}
+1311 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:171}] to localhost:27017
+765  [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+842  [cluster-ClusterId{value='5bd0240ec792cc2028de2feb', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:186}] to localhost:27017
+847  [cluster-ClusterId{value='5bd0240ec792cc2028de2feb', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 1]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2571948}
+869  [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:187}] to localhost:27017
+908  [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1918ms
+990  [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+1020 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.h.ContextHandler@5fd62371{/res,null,AVAILABLE}
+1030 [main] WARN  o.e.j.webapp.WebInfConfiguration - Web application not found ./war
+1034 [main] WARN  o.e.jetty.webapp.WebAppContext - Failed startup of context o.e.j.w.WebAppContext@28a0fd6c{/,null,null}{./war}
+java.io.FileNotFoundException: ./war
+	at org.eclipse.jetty.webapp.WebInfConfiguration.unpack(WebInfConfiguration.java:497) ~[jetty-webapp-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.webapp.WebInfConfiguration.preConfigure(WebInfConfiguration.java:72) ~[jetty-webapp-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.webapp.WebAppContext.preConfigure(WebAppContext.java:483) ~[jetty-webapp-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:519) ~[jetty-webapp-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61) ~[jetty-server-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:161) ~[jetty-server-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.server.Server.start(Server.java:411) ~[jetty-server-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:106) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61) ~[jetty-server-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:378) ~[jetty-server-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-util-9.3.9.v20160517.jar:9.3.9.v20160517]
+	at chat.main.ServerStart.start(Unknown Source) ~[scriptcore.jar:na]
+	at chat.main.Main.main(Unknown Source) ~[sdockercore.jar:na]
+	at SDockerMain.main(SDockerMain.java:32) ~[classes/:na]
